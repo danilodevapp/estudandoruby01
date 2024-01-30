@@ -13,26 +13,32 @@ puts ""
 
 case escolha
 when 1
-    num1 +=10
+    num1 += 10
     puts num1
     puts ""
 when 2
-    num1 -=10
+    num1 -= 10
     puts num1
     puts ""
 when 3
-    num1 *=10
+    num1 *= 10
     puts num1
     puts ""
 when 4
-    num1 /=10
+    num1 /= 10
     puts num1
     puts ""
 when 5
-    num1 %=10
+    num1 %= 2
     puts num1
     puts ""
 else
     puts "Opção inválida!"
     exit
+end
+
+hstore = {}
+11.times do |x| puts "A operação registrou: #{num1 * x}" 
+    hstore[x]= num1 * x
+    puts hstore.inspect
 end
